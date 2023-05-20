@@ -2,7 +2,7 @@ import { LightningElement, wire, track} from 'lwc';
 import getAccountInTable from '@salesforce/apex/AccountService.getAccountInTable';
 
 //Commited to GitHub
-
+//Pull Request
 const columns=[
     
         {label:  'Name',    fieldName: 'Name'  , editable: 'true'},
