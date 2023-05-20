@@ -3,6 +3,8 @@ import getAccountInTable from '@salesforce/apex/AccountService.getAccountInTable
 
 //Commited to GitHub
 //Pull Request
+//MAster
+
 const columns=[
     
         {label:  'Name',    fieldName: 'Name'  , editable: 'true'},
