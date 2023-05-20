@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Account List">
+        <div class="slds-m-around_medium">
+            <lightning-input class="slds-m-bottom_small" type="number" label="Account Count" onchange={changeHandler}></lightning-input>
+            <lightning-button class="slds-m-top_small" type="brand" label="Get Accounts" onclick={onclickHandler}></lightning-button>
+             
+            <template if:true={accounts}>
+              <template for:each={accounts} for:item="account">    
+                <lightning-layout vertical-align="center" key={account.id}>
+                        <ol>
+                            <li>
+                                <div><strong> {account.Name}</strong></div>
+                            </li>
+                        </ol>
+                </lightning-layout>
+            </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

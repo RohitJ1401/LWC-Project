@@ -1,0 +1,13 @@
+<template>
+    <lightning-card class="slds-m-around_medium" title="Parent Component">
+      
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-button type="text" label="Reset Bar Value" onclick={onkeyUpHandler}></lightning-button>
+    </div>
+
+    <c-child-component bar-chart-value={chartValue}></c-child-component>
+
+    </lightning-card> 
+
+
+</template>

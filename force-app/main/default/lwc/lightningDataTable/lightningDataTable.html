@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Account Table"> 
+    <div style="height: 300px;">
+        <lightning-input type="search" label="Search Account" onchange={changeHandler} class="slds-m-around_medium"></lightning-input>
+        <lightning-datatable
+                key-field="Id"
+                data={accounts.data}
+                columns={columns}>
+        </lightning-datatable>
+    </div>
+    <footer> 
+        <lightning-button class="slds-m-around_medium" variant="brand" title="Save"></lightning-button>
+        <lightning-button class="slds-m-around_medium" variant="brand" title="Delete"></lightning-button> 
+     </footer>
+    </lightning-card>
+
+    
+        
+
+
+</template>

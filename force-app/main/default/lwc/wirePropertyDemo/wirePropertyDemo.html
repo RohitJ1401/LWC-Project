@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Search Account">
+        <div class="slds-var-m-around_medium">
+         <lightning-input class="slds-m-around_medium" type="search" label="Search Account" onchange={changHandler}> </lightning-input>
+            <template if:true={accounts}>
+               <template for:each={accounts} for:item="account" >
+                  <lightning-layout vertical-align="Center" key={account.id} class="slds-m-around_medium" >
+                      <li>
+                        <div><strong>Name:  {account.Name}</strong></div>
+                        <div><strong>Industry: {account.Industry}</strong></div>
+                      </li>
+                  </lightning-layout>
+               </template>
+            </template>
+        </div>   
+    </lightning-card>
+</template>
