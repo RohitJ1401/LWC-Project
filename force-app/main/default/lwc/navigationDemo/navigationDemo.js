@@ -6,9 +6,9 @@ export default class NavigationDemo extends NavigationMixin(LightningElement) {
 
     navigateToGoogle(event){
         this[NavigationMixin.Navigate]({
-            type : 'Standard__webPage',
+            type : 'standard__webPage',
             attributes : {
-                url : 'https://sfdcfacts.com'
+                url : 'https://www.google.com/'
             }
         });
 
