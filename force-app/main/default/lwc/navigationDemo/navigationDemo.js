@@ -8,7 +8,7 @@ export default class NavigationDemo extends NavigationMixin(LightningElement) {
         this[NavigationMixin.Navigate]({
             type : 'standard__webPage',
             attributes : {
-                url : 'https://www.google.com/'
+                   url : 'https://www.google.com/'
             }
         });
 
@@ -19,7 +19,7 @@ export default class NavigationDemo extends NavigationMixin(LightningElement) {
             type : 'standard__objectPage',
             attributes: {
                 objectApiName: 'Account',
-                actionName: 'home'
+                   actionName: 'home'
                 
             }
         });
